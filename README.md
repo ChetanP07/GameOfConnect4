@@ -27,7 +27,7 @@ class GameOfConnect4
         boolean winner = false;
         int x = board.length/2;
         
-        //Playing the turn
+        //Play the turn
         while(winner==false && turn<=y)
         {
             boolean validPlay;
@@ -42,7 +42,7 @@ class GameOfConnect4
 
             }while(validPlay==false);
 
-            //marking the column
+            //Marking the column
             for(int row=board.length-1;row>=0;row--)
             {
                 if(board[row][play]==' ')
@@ -65,7 +65,7 @@ class GameOfConnect4
 
         }
         display(board);
-
+	//Display the winner
         if (winner){
 			if (player=='R'){
 				System.out.println("Blue won");
@@ -93,7 +93,7 @@ class GameOfConnect4
             System.out.println();
         }
         
-        //Checking the Invalid key and board IsFull 
+        //Checking the Invalid key and board IsFull condition
         public static boolean valid(int column, char[][] board){
             //valid column?
             if (column < 0 || column > board[0].length){
@@ -113,7 +113,7 @@ class GameOfConnect4
         {   
             int x = board.length/2;
             
-            //Checking the combination horizontally
+            //Checking the horizontal combination 
             for(int row=0;row<board.length;row++)
             {
                 int piece=0;
@@ -136,7 +136,7 @@ class GameOfConnect4
                 }
             }
 
-            //Checking the combination vertically 
+            //Checking the vertical combination  
             for(int col=0;col<board[0].length;col++)
             {
                 int piece=0;
