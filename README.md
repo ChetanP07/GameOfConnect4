@@ -65,7 +65,7 @@ class GameOfConnect4
 
         }
         display(board);
-	//Display the winner
+		//Display the winner
         if (winner){
 			if (player=='R'){
 				System.out.println("Blue won");
